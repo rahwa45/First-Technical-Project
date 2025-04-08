@@ -1,13 +1,13 @@
 @import "tailwindcss";
 :root {
-  --background: #ffffff;
+  
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    
   }
 }
 
@@ -19,7 +19,7 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background-color: #eadede;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -40,4 +40,11 @@ a {
   html {
     color-scheme: dark;
   }
+}
+.logo{
+  color: black;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: larger;
+  font-family: cursive;
 }

@@ -1,3 +1,5 @@
+
+
 .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
@@ -11,10 +13,12 @@
   align-items: center;
   justify-items: center;
   min-height: 100svh;
-  padding: 80px;
+  padding: 50px;
   gap: 64px;
   font-family: var(--font-geist-sans);
+  
 }
+
 
 @media (prefers-color-scheme: dark) {
   .page {
@@ -93,18 +97,34 @@ a.secondary {
   grid-row-start: 3;
   display: flex;
   gap: 24px;
+  color: black;
 }
 
 .footer a {
   display: flex;
   align-items: center;
   gap: 8px;
+ 
 }
 
 .footer img {
   flex-shrink: 0;
 }
-
+.btn{
+  background-color: #966c6c;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+  margin-top: 0px;
+  
+}
+.btn:hover{
+  background-color: black;
+  color: #F0E8E8;
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
@@ -215,3 +235,38 @@ a.secondary {
 .contactPage button:hover {
   background-color: #45a049;
 }
+
+.about{
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+ 
+ 
+}
+.about p{
+  
+  width: 50%;
+  margin-right: 15px;
+  padding: 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: justify;
+  line-height: 30px;
+}
+.btn2{
+  background-color: #966c6c;
+  color: white;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 160px;
+  
+}
+.btn2:hover{
+  background-color: black;
+  color: #F0E8E8;
+}
+
