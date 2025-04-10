@@ -1,17 +1,10 @@
 .page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
+  justify-content: center;
+
+  padding: 50px;
   gap: 64px;
   font-family: var(--font-geist-sans);
 }
@@ -26,12 +19,16 @@
     --button-secondary-hover: #1a1a1a;
   }
 }
+.logo:hover {
+  border: 2px solid black;
+}
 
 .main {
   display: flex;
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
+  align-items: center;
 }
 
 .main ol {
@@ -103,6 +100,20 @@ a.secondary {
 
 .footer img {
   flex-shrink: 0;
+}
+.btn {
+  background-color: #966c6c;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  margin-top: 0px;
+}
+.btn:hover {
+  background-color: black;
+  color: #f0e8e8;
 }
 
 /* Enable hover only on non-touch devices */
@@ -214,4 +225,33 @@ a.secondary {
 
 .contactPage button:hover {
   background-color: #45a049;
+}
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.about p {
+  width: 50%;
+  margin-right: 15px;
+  padding: 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: justify;
+  line-height: 30px;
+}
+.btn2 {
+  background-color: #966c6c;
+  color: white;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 160px;
+}
+.btn2:hover {
+  background-color: black;
+  color: #f0e8e8;
 }
